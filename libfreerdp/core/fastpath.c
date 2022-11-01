@@ -360,6 +360,7 @@ static BOOL fastpath_recv_update_synchronize(rdpFastPath* fastpath, wStream* s)
 
 static int fastpath_recv_update(rdpFastPath* fastpath, BYTE updateCode, wStream* s)
 {
+	WLog_WARN(TAG, "!!!Test Log from fastpath_recv_update");
 	BOOL rc = FALSE;
 	int status = 0;
 	rdpUpdate* update;
